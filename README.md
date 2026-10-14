@@ -22,7 +22,6 @@ code/       common.py (circuits, noise, features, data generation)   expcore.py 
 datasets/   36 seeded datasets: s<shots>_d<draw>.csv  (12 shot settings x 3 draws, 720 rows each)
 results/    raw per-evaluation results (*.jsonl) and extra.json, analysis.json
 figs/       figures (pdf/png) used in the paper
-paper/      IEEE conference paper: main.tex, IEEEtran.cls, compiled PDF
 ```
 Paths are resolved relative to the repository folder, so the code runs from wherever it is cloned.
 
