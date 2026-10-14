@@ -35,10 +35,6 @@ python code/figs.py               # redraw all figures into figs/
 ```
 Run the commands from the repository root. Results are cached in `results/`, so finished runs are skipped.
 
-## Paper
-`paper/IEEE_Noise_Fingerprinting_Revised.pdf` (source: `paper/main.tex`; build from inside `paper/` with `pdflatex main.tex` twice).
-`paper/code/` holds ASCII-safe copies of the scripts that the paper's Appendix prints; the working code is in `code/`.
-
 ## Reproducibility notes
 - Library versions (Qiskit, Aer, scikit-learn, xgboost) were not recorded when the original results were produced, so `requirements.txt` is unpinned. Small numerical differences are possible with other versions.
 - Random stratified cross-validation shares circuit/channel/severity configurations between training and test folds; it measures recognition of a configuration from a fresh sample, not generalisation to unseen severities.
