@@ -14,15 +14,6 @@ All results are from **simulation**; no quantum hardware was used and no quantum
 - Accuracy tracks the number of shots that fall outside the ideal outcome set (10 % with none, 99.7 % with more than 1,000).
 - Transfer to an unseen circuit is weak, and raw probabilities transfer at chance unless the ideal supports overlap.
 
-## Repository layout
-```
-code/       common.py (circuits, noise, features, data generation)   expcore.py (models, CV)
-            runexp.py (ablations)   analysis.py (diagnostics)   agg.py / figs.py (aggregation, figures)
-            gen_all.py (regenerates datasets, deterministic seeds)
-datasets/   36 seeded datasets: s<shots>_d<draw>.csv  (12 shot settings x 3 draws, 720 rows each)
-results/    raw per-evaluation results (*.jsonl) and extra.json, analysis.json
-figs/       figures (pdf/png) used in the paper
-```
-Paths are resolved relative to the repository folder, so the code runs from wherever it is cloned.
+
 
 
