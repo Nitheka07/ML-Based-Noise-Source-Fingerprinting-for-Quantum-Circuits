@@ -25,16 +25,4 @@ figs/       figures (pdf/png) used in the paper
 ```
 Paths are resolved relative to the repository folder, so the code runs from wherever it is cloned.
 
-## Quick start
-```bash
-pip install -r requirements.txt
-python code/gen_all.py 600        # (optional) regenerate datasets; the number is a time budget in seconds
-python code/runexp.py shots 600   # run an ablation: shots | size | feat | sev | circ | hp | cv | main | tune
-python code/analysis.py           # diagnostics -> results/analysis.json
-python code/figs.py               # redraw all figures into figs/
-```
-Run the commands from the repository root. Results are cached in `results/`, so finished runs are skipped.
 
-## Reproducibility notes
-- Library versions (Qiskit, Aer, scikit-learn, xgboost) were not recorded when the original results were produced, so `requirements.txt` is unpinned. Small numerical differences are possible with other versions.
-- Random stratified cross-validation shares circuit/channel/severity configurations between training and test folds; it measures recognition of a configuration from a fresh sample, not generalisation to unseen severities.
